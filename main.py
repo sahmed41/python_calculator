@@ -1,6 +1,4 @@
 import _engine.operations as op
-import _engine.program as p
-
 program_active = True
 operation = 0
 result = 0
@@ -26,7 +24,7 @@ while program_active:
 
     print("Choose one of the operations to be performed on the numbers you have entered:")
     print("1 - Add both numbers")
-    print("2 - Substract both numbers")
+    print("2 - Subtract both numbers")
     print("3 - Multiply both numbers")
     print("4 - Divide both numbers")
     print("x - Exit the program")
@@ -46,14 +44,18 @@ while program_active:
                 print("Adding...")
                 result = op.add(num_1, num_2)
             case 2:
-                print("Substracting...")
-                result = op.substract(num_1, num_2)
+                print("Subtracting...")
+                result = op.subtract(num_1, num_2)
             case 3:
                 print("Multiplying...")
                 result = op.multiply(num_1, num_2)
             case 4:
                 print("Diviting...")
-                result = op.divide(num_1, num_2)
+                try:
+                    result = op.divide(num_1, num_2)
+                except ZeroDivisionError:
+                    print("No number can be divided by zer")
+                    continue
             case _ if operation < 0 or operation > 4:
                 print("Please enter a valid input between 0 and 4 both inclusive or 'X' to exit")
 
