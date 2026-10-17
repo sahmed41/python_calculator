@@ -1,8 +1,4 @@
-Here is a comprehensive set of requirements for your first Python calculator project. It is specifically designed to let you practice every single concept you’ve learned so far.
-
----
-
-### **Project Requirements: Python Command-Line Calculator**
+### **Project Requirements: Python Command Line Calculator**
 
 #### **1. Basic Operations & Functions**
 
@@ -33,12 +29,6 @@ Here is a comprehensive set of requirements for your first Python calculator pro
 
 * **Code Readability:** Add clean, descriptive comments (`#`) above your functions and complex blocks of code explaining *what* they do and *why*.
 
----
 
-### **Bonus Challenge (Optional)**
 
-* **Calculation History:** Use a list to store previous calculation results during the session and add a menu option to display the history.
 
----
-
-Would you like me to provide a starter template or skeleton code to help you kick things off?

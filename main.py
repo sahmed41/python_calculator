@@ -54,11 +54,10 @@ while program_active:
                 try:
                     result = op.divide(num_1, num_2)
                 except ZeroDivisionError:
-                    print("No number can be divided by zer")
+                    print("No number can be divided by zero")
                     continue
             case _ if operation < 0 or operation > 4:
                 print("Please enter a valid input between 0 and 4 both inclusive or 'X' to exit")
+                continue
 
-        print(result)
-
-
+        print("Result", result)
